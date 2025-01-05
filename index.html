@@ -98,6 +98,8 @@
 
 
     <!-- FAQ SECTION -->
+
+    <!-- FAQ SECTION -->
 <section id="faqs">
     <h2>Frequently Asked Questions💡</h2>
     <div class="faq-container">
@@ -112,16 +114,6 @@
             <p id="faq7" class="faq-answer hidden">
                 We assist with finding suitable scholarships and completing the applications effectively.
             </p>
-
-         </div>
-            <div class="faq" onclick="toggleAnswer('faq13')">
-                <h3>I have a website but it’s outdated. Can you help modernize it?</h3>
-                <p id="faq13" class="faq-answer hidden">
-                    Yes, we can help modernize your website.
-                </p>
-            </div>
-        </div>
-
         </div>
         <div class="faq" onclick="toggleAnswer('faq8')">
             <h3>Can you help with FAFSA submission?</h3>
@@ -153,7 +145,7 @@
                 <p id="faq5" class="faq-answer hidden">
                     We offer tutoring in Math, Science, Social Studies, and Coding, tailored to boost your performance.
                 </p>
-         </div>
+            </div>
             <div class="faq" onclick="toggleAnswer('faq13')">
                 <h3>What web solutions do you provide?</h3>
                 <p id="faq13" class="faq-answer hidden">
@@ -161,7 +153,8 @@
                 </p>
             </div>
         </div>
-
+        <button class="button" onclick="toggleMoreFAQs()">Show More</button>
+    </div>
 </section>
 
 <script>
@@ -169,6 +162,7 @@
         var answer = document.getElementById(faqId);
         answer.classList.toggle('hidden');
     }
+
     function toggleMoreFAQs() {
         var moreFaqs = document.getElementById('more-faqs');
         var button = document.querySelector('.faq-container > .button');
@@ -176,7 +170,6 @@
         button.textContent = moreFaqs.classList.contains('hidden') ? 'Show More' : 'Show Less';
     }
 </script>
-
       
     <!-- FOOTER -->
 
